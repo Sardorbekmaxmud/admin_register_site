@@ -1,6 +1,8 @@
+
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
+
     <head>
         <!-- Required meta tags-->
         <meta charset="UTF-8">
@@ -13,8 +15,7 @@
         <title>Dashboard</title>
 
         <!-- Styles CSS -->
-        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
         <!-- Fontfaces CSS-->
         <link href="{% static 'css/font-face.css' %}" rel="sty' %}lesheet" media="all">
         <link href="{% static 'vendor/font-awesome-4.7/css/font-awesome.min.css' %}" rel="stylesheet" media="all">
@@ -43,10 +44,6 @@
             {% include 'sidebar.html' %}
             {% block content %}{% endblock %}
         </div>
-
-        {% include 'userbar.html' %}
-
-        {% block main %}{% endblock %}
 
         <!-- Jquery JS-->
         <script src="{% static 'vendor/jquery-3.2.1.min.js' %}"></script>

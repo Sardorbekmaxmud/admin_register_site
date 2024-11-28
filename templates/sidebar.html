@@ -1,3 +1,4 @@
+
 {% load static %}
 <!-- MENU SIDEBAR-->
 <aside class="menu-sidebar d-none d-lg-block">
@@ -10,27 +11,26 @@
         <nav class="navbar-sidebar">
             <ul class="list-unstyled navbar__list">
                 <li class="active">
-                    <a href="#"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                    <a href="{% url 'home-page' %}"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-chart-bar"></i>Faculty</a>
+                    <a href="{% url 'faculty-list' %}"><i class="fas fa-chart-bar"></i>Faculty</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-chart-bar"></i>Kafedra</a>
+                    <a href="{% url 'kafedra-list' %}"><i class="fas fa-chart-bar"></i>Kafedra</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-chart-bar"></i>Subject</a>
+                    <a href="{% url 'subject-list' %}"><i class="fas fa-chart-bar"></i>Subject</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-chart-bar"></i>Teacher</a>
+                    <a href="{% url 'teacher-list' %}"><i class="fas fa-chart-bar"></i>Teachers</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-chart-bar"></i>Group</a>
+                    <a href="{% url 'group-list' %}"><i class="fas fa-chart-bar"></i>Groups</a>
                 </li>
                 <li>
-                    <a href="#"><i class="fas fa-chart-bar"></i>Student</a>
+                    <a href="{% url 'student-list' %}"><i class="fas fa-chart-bar"></i>Students</a>
                 </li>
-
             </ul>
         </nav>
     </div>
